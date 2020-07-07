@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Profile</title>
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,7 +12,7 @@
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!--Random CSS-->
-    <link rel="stylesheet" href="../static/CSS/dashboard.css">
+    <link rel="stylesheet" href="../static/CSS/profile.css">
 </head>
 <body>
     <div class="wrapper">
@@ -22,8 +22,8 @@
                     <a class="company-link" href="#">MEETIFY</a>
                 </div>
                 <ul>
-                    <li class="sidebar-item active">
-                        <a class="sidebar-link" href="#">
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="./dashboard.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sliders align-middle">
                                 <line x1="4" y1="21" x2="4" y2="14"></line>
                                 <line x1="4" y1="10" x2="4" y2="3"></line>
@@ -38,8 +38,8 @@
                             Dashboard
                         </a>
                     </li>
-                    <li class="sidebar-item">
-                        <a class="sidebar-link" href="./profile.html">
+                    <li class="sidebar-item active">
+                        <a class="sidebar-link" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user align-middle">
                                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                 <circle cx="12" cy="7" r="4"></circle>
@@ -131,7 +131,7 @@
                                 Ankit Jaiswal
                             </a>
                             <div class="dropdown-menu-right dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="./profile.html">
+                                <a class="dropdown-item" href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user align-middle">
                                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                         <circle cx="12" cy="7" r="4"></circle>
@@ -152,145 +152,130 @@
                     </ul>
                 </div>
             </nav>
-
-            <!--TOP NAVBAR END-->
-
-            <!--CARDS START-->
-            <div class="subjects-cards">
-                <div class="d-flex row">
-                    <div class="card-item">
-                        <img src="../static/images/physics.png">
-                        <h5>Physics</h5>
-                        <div>
-                            <p>Attempted : <span>0</span></p>
-                            <hr>
-                            <p>Total Test : <span>10</span></p>
-                        </div>
-                    </div>
-                    <div class="card-item">
-                        <img src="../static/images/chemistry.png">
-                        <h5>Chemistry</h5>
-                        <div>
-                            <p>Attempted : <span>0</span></p>
-                            <hr>
-                            <p>Total Test : <span>10</span></p>
-                        </div>
-                    </div>
-                    <div class="card-item">
-                        <img src="../static/images/math.png">
-                        <h5>Maths</h5>
-                        <div>
-                            <p>Attempted : <span>0</span></p>
-                            <hr>
-                            <p>Total Test : <span>10</span></p>
-                        </div>
-                    </div>
-                    <div class="card-item">
-                        <img src="../static/images/physics.png">
-                        <h5>Full Length Test</h5>
-                        <div>
-                            <p>Attempted : <span>0</span></p>
-                            <hr>
-                            <p>Total Test : <span>10</span></p>
-                        </div>
+            <!--TOP NAVBAR START-->
+            <!--MAIN CONTENT-->
+            <main class="content">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="h3 mb-3">Settings</h1>
                     </div>
                 </div>
-            </div>
-            <!--CARDS END-->
+                <div class="row">
+                    <div class="col-xl-2 col-md-3">
+                        <div class="card">
+                            <div class="card-header">
+                                Profile Settings
+                            </div>
+                            <div class="list-group list-group-flush" role="tablist">
+                                <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account" role="tab">
+                                    Account
+                                </a>
+                                <a class="list-group-item list-group-item-action" data-toggle="list" href="#password" role="tab">
+                                    Password
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-xl-10">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="account" role="tabpanel">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title mb-0">Public info</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="contactForm">
+                                            <form class="formBox row">
+                                                <div class="col-md-8 col-12">
+                                                    <div class="inputBox w100">
+                                                        <input type="text" name="" required>
+                                                        <span>Username</span>
+                                                    </div>
+                                                    <div class="inputBox w100">
+                                                        <input type="text" name="" required>
+                                                        <span>Email Address</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-12">
+                                                    <div class="text-center">
+                                                        <img alt="Charles Hall" src="../static/images/male.png" class="rounded-circle img-responsive mt-2" width="128" height="128">
+                                                        <div class="mt-2">
+                                                            <button class="upload-button" href="#">Upload</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="inputBox w100 col-12">
+                                                    <input type="submit" name="" value="Save changes" >
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
 
-            <!--TASK MANAGER AND LATEST TESTS PERFORMANCE START-->
-            <div class="second-part d-flex row">
-                <div class="task-manager col-md-4 card">
-                    <div class="card-header">
-                            <h5 class="pull-left">Tasks</h5>
-                            <a href="#" class="btn btn-primary float-right mt-n1"><i class="fa fa-plus"></i> New task</a>
+                            <div class="tab-pane fade" id="password" role="tabpanel">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Password</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="contactForm">
+                                            <form class="formBox row">
+                                                <div class="col-md-8 col-12">
+                                                    <div class="inputBox w50 ws100">
+                                                        <input type="password" name="" required>
+                                                        <span>Current Password</span>
+                                                    </div>
+                                                    <div class="inputBox w50 ws100">
+                                                        <input type="password" name="" required>
+                                                        <span>New Password</span>
+                                                    </div>
+                                                    <div class="inputBox w50 ws100">
+                                                        <input type="password" name="" required>
+                                                        <span>Confirm Password</span>
+                                                    </div>
+                                                </div>
+                                                <div class="inputBox w100 col-12">
+                                                    <input type="submit" name="" value="Save changes" >
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <ul class="todo-list">
-                            <li class="d-flex justify-content-between">
-                                Physics
-                                <div class="todo-options">
-                                    <a href="#"><img src="../static/images/tick.png" style="margin-right: 10px;"></a>
-                                    <a href="#"><img src="../static/images/criss-cross.png"></a>
-                                </div>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                Chemistry
-                                <div class="todo-options">
-                                    <a href="#"><img src="../static/images/tick.png" style="margin-right: 10px;"></a>
-                                    <a href="#"><img src="../static/images/criss-cross.png"></a>
-                                </div>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                Maths
-                                <div class="todo-options">
-                                    <a href="#"><img src="../static/images/tick.png" style="margin-right: 10px;"></a>
-                                    <a href="#"><img src="../static/images/criss-cross.png"></a>
-                                </div>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                Full length test
-                                <div class="todo-options">
-                                    <a href="#"><img src="../static/images/tick.png" style="margin-right: 10px;"></a>
-                                    <a href="#"><img src="../static/images/criss-cross.png"></a>
-                                </div>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                MHT-CET
-                                <div class="todo-options">
-                                    <a href="#"><img src="../static/images/tick.png" style="margin-right: 10px;"></a>
-                                    <a href="#"><img src="../static/images/criss-cross.png"></a>
-                                </div>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                JEE Main
-                                <div class="todo-options">
-                                    <a href="#"><img src="../static/images/tick.png" style="margin-right: 10px;"></a>
-                                    <a href="#"><img src="../static/images/criss-cross.png"></a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        Load more task...
-                    </div>
-                </div>
-                <div class="performance-graph card">
-                    <div class="card-header">
-                        <h5>Performance</h5>
-                    </div>
-                </div>
-            </div>
-            <!--TASK MANAGER AND LATEST TESTS PERFORMANCE END-->
-            <footer class="footer">
-				<div class="container-fluid">
-					<div class="row text-muted">
-						<div class="col-6 text-left">
-							<p class="mb-0">
-								<a href="index.html" class="text-muted"><strong>ILP</strong></a> ©
-							</p>
-						</div>
-						<div class="col-6 text-right">
-							<ul class="list-inline">
-								<li class="list-inline-item">
-									<a class="text-muted" href="#">Support</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="text-muted" href="#">Help Center</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="text-muted" href="#">Privacy</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="text-muted" href="#">Terms</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</footer>
+                    <!--
 
+                            <div class="tab-pane fade" id="password" role="tabpanel">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Password</h5>
 
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="inputPasswordCurrent">Current password</label>
+                                                <input type="password" class="form-control" id="inputPasswordCurrent">
+                                                <small><a href="#">Forgot your password?</a></small>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPasswordNew">New password</label>
+                                                <input type="password" class="form-control" id="inputPasswordNew">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPasswordNew2">Verify password</label>
+                                                <input type="password" class="form-control" id="inputPasswordNew2">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Save changes</button>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            </main>
         </div>
     </div>
 
@@ -298,6 +283,5 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    
 </body>
 </html>
