@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Random CSS-->
+    <link rel="stylesheet" href="../static/CSS/dashboard.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navigation">
+            <div class="sidebar-nav">
+                <div class="company-name">
+                    <a class="company-link" href="#">MEETIFY</a>
+                </div>
+                <ul>
+                    <li class="sidebar-item active">
+                        <a class="sidebar-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sliders align-middle">
+                                <line x1="4" y1="21" x2="4" y2="14"></line>
+                                <line x1="4" y1="10" x2="4" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12" y2="3"></line>
+                                <line x1="20" y1="21" x2="20" y2="16"></line>
+                                <line x1="20" y1="12" x2="20" y2="3"></line>
+                                <line x1="1" y1="14" x2="7" y2="14"></line>
+                                <line x1="9" y1="8" x2="15" y2="8"></line>
+                                <line x1="17" y1="16" x2="23" y2="16"></line>
+                            </svg>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user align-middle">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            Profile
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout align-middle">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="9" y1="21" x2="9" y2="9"></line>
+                            </svg>
+                            Tests
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list align-middle">
+                                <line x1="8" y1="6" x2="21" y2="6"></line>
+                                <line x1="8" y1="12" x2="21" y2="12"></line>
+                                <line x1="8" y1="18" x2="21" y2="18"></line>
+                                <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                            </svg>
+                            Tasks
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2 align-middle">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                            Analysis
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="main">
+
+            <!--TOP NAVBAR START-->
+            <nav class="navbar navbar-expand navbar-light bg-light">
+              
+                <div class=" navbar-collapse" style="display: flex!important;" id="navbarSupportedContent">
+                    <a class="sidebar-toggle d-flex">
+                        <i class="hamburger align-self-center"></i>
+                    </a>
+                    <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                        <input class="form-control search" type="search" placeholder="Search..." aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0 search-icon" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search align-middle">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </form>
+
+                    <ul class="navbar-nav main-exams mr-auto d-none d-md-flex" style="margin-left: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                JEE Mains
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                MHT-CET
+                            </a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="navbar-nav ml-auto">
+                        <!--<li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="profile-pic-nav" src="../static/images/male.png" width="32" height="32" style="border-radius: 50%; margin-left: 10px;">
+                                Ankit Jaiswal
+                            </a>
+                            <div class="dropdown-menu-right dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user align-middle">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings align-middle mr-1">
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                                    </svg>
+                                    Settings
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!--TOP NAVBAR START-->
+
+            <!--CARDS START-->
+            <div class="subjects-cards">
+                <div class="d-flex row">
+                    <div class="card-item">
+                        <img src="../static/images/physics.png">
+                        <h5>Physics</h5>
+                        <div>
+                            <p>Attempted : <span>0</span></p>
+                            <hr>
+                            <p>Total Test : <span>10</span></p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="../static/images/chemistry.png">
+                        <h5>Chemistry</h5>
+                        <div>
+                            <p>Attempted : <span>0</span></p>
+                            <hr>
+                            <p>Total Test : <span>10</span></p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="../static/images/math.png">
+                        <h5>Maths</h5>
+                        <div>
+                            <p>Attempted : <span>0</span></p>
+                            <hr>
+                            <p>Total Test : <span>10</span></p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="../static/images/physics.png">
+                        <h5>Full Length Test</h5>
+                        <div>
+                            <p>Attempted : <span>0</span></p>
+                            <hr>
+                            <p>Total Test : <span>10</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--CARDS END-->
+
+            <!--TASK MANAGER AND LATEST TESTS PERFORMANCE START-->
+            <div class="second-part d-flex row">
+                <div class="task-manager col-md-4 card">
+                    <div class="card-header">
+                            <h5 class="pull-left">Tasks</h5>
+                            <a href="#" class="btn btn-primary float-right mt-n1"><i class="fa fa-plus"></i> New task</a>
+                    </div>
+                    <div class="card-body">
+                        <ul class="todo-list">
+                            <li class="d-flex justify-content-between">
+                                Physics
+                                <div class="todo-options">
+                                    <a href="#"><img src="../static/images/tick.png" style="margin-right: 10px;"></a>
+                                    <a href="#"><img src="../static/images/criss-cross.png"></a>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                Chemistry
+                                <div class="todo-options">
+                                    <a href="#"><img src="../static/images/tick.png" style="margin-right: 10px;"></a>
+                                    <a href="#"><img src="../static/images/criss-cross.png"></a>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                Maths
+                                <div class="todo-options">
+                                    <a href="#"><img src="../static/images/tick.png" style="margin-right: 10px;"></a>
+                                    <a href="#"><img src="../static/images/criss-cross.png"></a>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                Full length test
+                                <div class="todo-options">
+                                    <a href="#"><img src="../static/images/tick.png" style="margin-right: 10px;"></a>
+                                    <a href="#"><img src="../static/images/criss-cross.png"></a>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                MHT-CET
+                                <div class="todo-options">
+                                    <a href="#"><img src="../static/images/tick.png" style="margin-right: 10px;"></a>
+                                    <a href="#"><img src="../static/images/criss-cross.png"></a>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                JEE Main
+                                <div class="todo-options">
+                                    <a href="#"><img src="../static/images/tick.png" style="margin-right: 10px;"></a>
+                                    <a href="#"><img src="../static/images/criss-cross.png"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        Load more task...
+                    </div>
+                </div>
+                <div class="performance-graph card">
+                    <div class="card-header">
+                        <h5>Performance</h5>
+                    </div>
+                </div>
+            </div>
+            <!--TASK MANAGER AND LATEST TESTS PERFORMANCE END-->
+            <footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-left">
+							<p class="mb-0">
+								<a href="index.html" class="text-muted"><strong>ILP</strong></a> ©
+							</p>
+						</div>
+						<div class="col-6 text-right">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Support</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Help Center</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Privacy</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Terms</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+</body>
+</html>
